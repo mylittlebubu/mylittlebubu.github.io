@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor = "blue" background="sb.jpg">
+
+<img src="bubu.jpg" width=20% height=20%>
+<h1>Ready Bubu ?</h1>
+
+<button onclick="typeWriter()"> Yes Bubu! </button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = "There you go my bubu! Don't blush :P  ".concat("😚".repeat(7777));
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<!-- <h4>hehe</h4> -->
+</body>
+</html>
